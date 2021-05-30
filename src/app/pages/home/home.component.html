@@ -17,9 +17,9 @@
 <app-partyaccount-card style="margin: 20px;" *ngFor="let item of partyaccount | async" [partyaccount]="item"></app-partyaccount-card>
 <mat-divider></mat-divider>
 
-<h1 style="text-align: center;">Magas creditű partnerek</h1>
+<h1 style="text-align: center;">Magas creditű partnerek:</h1>
 <app-partyaccount-card style="margin: 20px;" *ngFor="let item of partyaccounthigh | async" [partyaccount]="item"></app-partyaccount-card>
-<h1 style="text-align: center;">Account típus = customer</h1>
+<h1 style="text-align: center;">Account típus = customer:</h1>
 <app-partyaccount-card style="margin: 20px;" *ngFor="let item of partyaccountcustomer | async" [partyaccount]="item"></app-partyaccount-card>
 
 
