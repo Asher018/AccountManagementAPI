@@ -11,7 +11,7 @@ export class PartyaccountAddComponent implements OnInit {
 
   form: FormGroup = new FormGroup({
     accountType: new FormControl(''),
-    creditLimit: new FormControl(''),
+    creditLimit: new FormControl(0),
     description: new FormControl(''),
     href: new FormControl(''),
     lastModified: new FormControl(new Date()),

@@ -26,6 +26,7 @@ import {MatDividerModule} from '@angular/material/divider';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatButtonModule} from '@angular/material/button';
 import { PartyaccountUpdateComponent} from 'src/app/pages/partyaccount/partyaccount-update/partyaccount-update.component';
+import { MatInput, MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -57,6 +58,7 @@ import { PartyaccountUpdateComponent} from 'src/app/pages/partyaccount/partyacco
     MatDividerModule,
     MatExpansionModule,
     MatButtonModule,
+    MatInputModule
     
   ],
   providers: [],
