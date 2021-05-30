@@ -1,0 +1,9 @@
+<mat-card *ngIf="services" appHighlight>
+    <mat-card-header>
+      <mat-card-title [style.backgroundColor]="services.price >= 1500 ? 'red': services.price >= 1000 ? 'yellow': 'orange' ">{{services.title}}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <p>{{services.description}}</p>
+      <p>{{services.price}} huf</p>
+    </mat-card-content>
+</mat-card>

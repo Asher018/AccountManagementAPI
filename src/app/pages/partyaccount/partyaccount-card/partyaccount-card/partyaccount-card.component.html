@@ -1,0 +1,32 @@
+<mat-card [ngClass]="partyaccount.creditLimit < 10000 ? 'poor' : partyaccount.creditLimit < 50000 ? 'average' : 'rich' " *ngIf="partyaccount">
+    <mat-card-header>
+      <mat-card-title>{{partyaccount.name}}</mat-card-title>
+    </mat-card-header>
+    <mat-divider></mat-divider>
+    <mat-expansion-panel hideToggle>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Több információ
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <mat-divider></mat-divider>
+      <mat-card-content>Név: {{partyaccount.name}}</mat-card-content>
+      <mat-divider></mat-divider>
+      <mat-card-content>Credit limit: {{partyaccount.creditLimit}}</mat-card-content>
+      <mat-divider></mat-divider>
+      <mat-card-content>Leírás: {{partyaccount.description}}</mat-card-content>
+      <mat-divider></mat-divider>
+      <mat-card-content>Város: {{partyaccount.state}}</mat-card-content>
+      <mat-divider></mat-divider>
+      <mat-card-content>Fiók típusa: {{partyaccount.accountType}}</mat-card-content>
+      <mat-divider></mat-divider>
+    </mat-expansion-panel>
+    <mat-divider></mat-divider>
+    <button mat-icon-button (click)="delete(partyaccount.id)">
+      <mat-icon>delete</mat-icon>
+    </button>
+    <button mat-icon-button (click)="openDialogupdate(partyaccount.id)">
+      <mat-icon>update</mat-icon>
+    </button>
+
+</mat-card>
